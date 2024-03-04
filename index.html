@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROHIT FITNESS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('image/bg.jpg');
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Young Serif', serif;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 4px solid red; */
+            top: 3px;
+            position: absolute;
+            left: 34px;
+        }
+
+        .mid {
+            /* border: 4px solid blue; */
+            margin: 4px 516px;
+            display: block;
+            width: 44%;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 4px solid yellow; */
+            top: 22px;
+            right: 34px;
+            position: absolute;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 12px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 96px;
+        }
+
+        .btn {
+            font-family: 'Young Serif', serif;
+            margin: 0px 9px;
+            padding: 3px 10px;
+            color: white;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 11px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: green;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 116px 700px;
+            padding: 18px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        form{
+            margin: 0px 20px;
+        }
+
+        .formgroup input {
+            font-family: 'Young Serif', serif;
+            text-align: center;
+            width: 450px;
+            display: block;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 9px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .container button {
+            display: block;
+            width: 95%;
+            margin: 20px auto;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="image/logoo.avif" alt="">
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- mid box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym of Dhanbad</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Email-Id">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Phone no.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
